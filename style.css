@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#generazione-password {
+    text-align: center;
+    width: 500px;
+    padding: 50px;
+    margin-top: 100px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: none;
+}
+
+#generazione-password.visible {
+    display: block;
+}
+
+p {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+div#password {
+    font-size: 22px;
+    color: red;
+}
+
+#nome {
+    font-weight: bold;
+}

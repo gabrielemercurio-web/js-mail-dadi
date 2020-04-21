@@ -8,6 +8,18 @@ console.log([autorizzati]);
 
 // Controlla che sia nella lista di chi può accedere
 // e stampa un messaggio appropriato (sei in lista/non sei in lista)
-if (mailUtente) {
+// debugger;
 
+var mailTrovata = false;
+
+for (var i = 0; i < autorizzati.length; i++) {
+    if (mailUtente == autorizzati[i]) {
+        mailTrovata = true;
+    }
+}
+if (mailTrovata == true) {
+    alert('Email trovata');
+} else {
+    autorizzati.push(mailUtente);
+    alert('Email non era presente ed stata aggiunta');
 }
